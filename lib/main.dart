@@ -1,3 +1,5 @@
+import 'package:counter_cubit/widgets/count.dart';
+import 'package:counter_cubit/widgets/floating_counter.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +17,10 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: const Scaffold(
-        body: Text("Hello world !"),
+        body: Center(
+          child: Count(),
+        ),
+        floatingActionButton: FloatingCounter(),
       ),
     );
   }
