@@ -22,6 +22,9 @@ class MyApp extends StatelessWidget {
       title: 'Counter Cubit',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        floatingActionButtonTheme: const FloatingActionButtonThemeData(
+          splashColor: Colors.white12
+        )
       ),
       home: const Scaffold(
         body: Center(
